@@ -320,7 +320,7 @@
             <h5 class="card-title">Luxury Tented Retreat</h5>
             <p class="card-text mb-1"><strong>Duration:</strong> 2 - 3 Nights</p>
             <p class="card-text"><strong>Price Range:</strong> KES 18,000–25,000 per night</p>
-             <a href="#" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package</a>
+             <a href="#" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package<i class="bi bi-arrow-right "></i></a>
           </div>
         </div>
       </div>
@@ -333,7 +333,7 @@
             <h5 class="card-title">Luxury Tented Retreat</h5>
             <p class="card-text mb-1"><strong>Duration:</strong> 2 - 3 Nights</p>
             <p class="card-text"><strong>Price Range:</strong> KES 18,000–25,000 per night</p>
-         <a href="#" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package</a>
+         <a href="#" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package<i class="bi bi-arrow-right "></i></a>
           </div>
         </div>
       </div>
@@ -346,7 +346,7 @@
       <h5 class="card-title">Overland Safari Adventure</h5>
       <p class="card-text mb-1"><strong>Duration:</strong> 2 - 3 Nights</p>
       <p class="card-text"><strong>Price Range:</strong> KES 18,000–25,000 per night</p>
-      <a href="#" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package</a>
+      <a href="#" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package<i class="bi bi-arrow-right "></i></a>
     </div>
   </div>
 </div>
@@ -354,14 +354,22 @@
     </div>
   </div>
 </section> 
-
-
 <!-- end -->
 
 <!-- plan a trip start -->
-<div>
+<section class="about-tents-section  ">
+  <div class="container  py-5">
+    <div class="row">
+      <div class="col-12 col-md-6 mx-auto d-flex mb-5 justify-content-center"> 
+        <a class="btn btn-danger custom-nav-btn d-flex align-items-center gap-2" href="reservation.html">
+          <img src="images/vector.png" alt="Trip icon" width="18" height="18">
+          Plan your trip
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-</div>
 
 <!-- plan a trip end -->
 
@@ -445,7 +453,7 @@
         <img src="images/logo.png" alt="logo" width="70" height="70" class="d-inline-block align-text-top">
           </div>
 
-          <div class="container pe-5">
+          <div class="container">
             <h5>Safari</h5>
         
           </div>

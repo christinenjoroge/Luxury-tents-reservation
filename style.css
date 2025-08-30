@@ -221,10 +221,25 @@ font-family: 'Ubuntu', sans-serif;
   border-radius: 10px;
 }
 
+.card-trip {
+    position: relative; /* make overlay stick to this container */
+  background-image: url('images/hero.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh; 
+  color: white;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden; 
+}
 
 
-
-
+.card-trip .btn {
+  background-color: red !important;
+}
 
 
 
