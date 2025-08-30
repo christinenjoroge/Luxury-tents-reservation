@@ -1,96 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Safari Camps</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-
-  <!-- Bootstrap Icons (only include once!) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet"/>
-
-  <!-- Your custom CSS (must come last!) -->
-  <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-    <!-- start or nav -->
-  
-<header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.png" alt="logo" width="70" height="70" class="d-inline-block align-text-top">
-      </a>
-
-      <!-- Mobile toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Navbar items -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <!-- Home -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <!-- Safari dropdown -->
-          <li class="nav-item dropdown">
-            <button class="btn" data-bs-toggle="dropdown">
-              Safari <i class="bi bi-chevron-down"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Camps</a></li>
-            </ul>
-          </li>
-
-          <!-- Camping dropdown -->
-          <div class="nav-item dropdown">
-            <button class="btn" data-bs-toggle="dropdown">
-              Camping <i class="bi bi-chevron-down"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Luxury Tents </a></li>
-            </ul>
-</div>
-
-          <!-- Contact -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Sign in / Book now buttons -->
-     <div class="d-none d-lg-flex gap-2">
-  <a class="btn btn-outline-danger custom-nav-btn" href="reservation.html">
-    <i class="bi bi-person-circle text-secondary me-2"></i> Sign In
-  </a>
-  <a class="btn btn-danger custom-nav-btn d-flex align-items-center gap-2" href="reservation.html">
-     <img src="images/vector.png" alt="Trip icon" width="18" height="18">
-    Plan your trip
-  </a>
-</div>
-
-    </div>
-  </nav>
-</header>
-
-  <!-- end of nav -->
+<?php
+include "includes/header.php";
+?>
 
   <!-- main content -->
     <section class="tents-container">
@@ -242,7 +152,7 @@
     </div>
 
     <!-- Safari Section (hidden at first) -->
-    <div id="safari-section" class="row g-4 d-none">
+    <div id="safari-section" class="row g-4">
       <div class="col-md-4 col-sm-6">
         <div class="card card-overlay text-white">
           <img src="images/safari-camp.jpg" class="card-img" alt="Safari Luxury Tent">
@@ -320,7 +230,7 @@
             <h5 class="card-title">Luxury Tented Retreat</h5>
             <p class="card-text mb-1"><strong>Duration:</strong> 2 - 3 Nights</p>
             <p class="card-text"><strong>Price Range:</strong> KES 18,000–25,000 per night</p>
-             <a href="#" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package<i class="bi bi-arrow-right "></i></a>
+             <a href="luxurytents.php" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package<i class="bi bi-arrow-right "></i></a>
           </div>
         </div>
       </div>
@@ -333,7 +243,7 @@
             <h5 class="card-title">Luxury Tented Retreat</h5>
             <p class="card-text mb-1"><strong>Duration:</strong> 2 - 3 Nights</p>
             <p class="card-text"><strong>Price Range:</strong> KES 18,000–25,000 per night</p>
-         <a href="#" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package<i class="bi bi-arrow-right "></i></a>
+         <a href="luxurytents.php" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package<i class="bi bi-arrow-right "></i></a>
           </div>
         </div>
       </div>
@@ -346,7 +256,7 @@
       <h5 class="card-title">Overland Safari Adventure</h5>
       <p class="card-text mb-1"><strong>Duration:</strong> 2 - 3 Nights</p>
       <p class="card-text"><strong>Price Range:</strong> KES 18,000–25,000 per night</p>
-      <a href="#" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package<i class="bi bi-arrow-right "></i></a>
+      <a href="luxurytents.php" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">View Package<i class="bi bi-arrow-right "></i></a>
     </div>
   </div>
 </div>
@@ -448,30 +358,6 @@
 <!-- end of reviews -->
 
 
- <footer class="w-full p-5  bg-dark text-white position-relative">
-     <div class="text-md-start">
-        <img src="images/logo.png" alt="logo" width="70" height="70" class="d-inline-block align-text-top">
-          </div>
-
-          <div class="container">
-            <h5>Safari</h5>
-        
-          </div>
-
-          <div class="container text-center">
-            <p class="lead mb-0">Copyright &copy; 2025 Christine Njoroge</p>
-            <a href="#" class=" text-white bottom-0 end-0 p-5">
-              <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
-          </div>
-         
-        </footer>
-
-        
-<script src ="javascrip.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
-
+<?php
+include "includes/footer.php";
+?>

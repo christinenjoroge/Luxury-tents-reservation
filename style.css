@@ -8,6 +8,12 @@ body{
   color: #333;
    
 }
+
+body::before{
+    display: block;
+    content: '';
+    height: 50px;
+}
 /* hero section start */
 .navbar-nav .nav-link {
   font-family: 'Ubuntu', sans-serif;
@@ -221,25 +227,59 @@ font-family: 'Ubuntu', sans-serif;
   border-radius: 10px;
 }
 
-.card-trip {
-    position: relative; /* make overlay stick to this container */
-  background-image: url('images/hero.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 70vh; 
-  color: white;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden; 
-}
+
+footer {
+      background: #f9f9f9;
+      padding: 40px 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+    }
+    .footer-logo img {
+      width: 150px;
+      margin-bottom: 15px;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      font-size: 18px;
+      color: #333;
+      text-decoration: none;
+    }
+    .footer-links h4,
+    .footer-location h4 {
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-links ul li {
+      margin-bottom: 8px;
+    }
+    .footer-links ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+    .footer-links ul li a:hover {
+      color: #e74c3c;
+    }
+    .footer-location iframe {
+      width: 100%;
+      height: 120px;
+      border: 0;
+      margin-bottom: 10px;
+    }
+    .footer-location p {
+      margin: 5px 0;
+      color: #333;
+    }
+  
 
 
-.card-trip .btn {
-  background-color: red !important;
-}
 
 
 
