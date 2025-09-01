@@ -44,7 +44,11 @@ include "includes/header.php";
           <label>Camps</label>
           <select style="border: none;">
             <option>Luxury Tents</option>
-            <option>Available Tents</option>
+            <option>Honeymoontent</option>
+             <option>Family Tents</option>
+              <option>Bush Tent</option>
+               <option>Glamping</option>
+
           </select>
         </div>
 
@@ -284,8 +288,8 @@ include "includes/header.php";
 <!-- plan a trip end -->
 
 <!-- start of reviews -->
-  <section class="p-5 mt-4" id="reviews">
-  <h2 class="text-center mb-4">Real stories from Bunduz Compfire</h2>
+  <section class="reviews-container p-5 mt-4" id="reviews">
+   <h2 class="Experiences fw-bold text-center">Real Stories </h2>
   <div class="row g-4">
 
     <!-- Testimonial 1 -->

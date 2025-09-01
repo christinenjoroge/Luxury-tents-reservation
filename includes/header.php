@@ -70,7 +70,7 @@
 
           <!-- Contact -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact-location">Contact</a>
           </li>
         </ul>
       </div>

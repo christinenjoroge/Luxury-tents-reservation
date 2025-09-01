@@ -211,14 +211,7 @@ font-family: 'Ubuntu', sans-serif;
   right: 0;
 }
 
-.review{
-   font-family: 'Ubuntu', sans-serif; 
-  font-weight: 400;                 
-  font-style: normal;
-  line-height: 29px;
-  font-size: 15px;
-  text-align: center;
-}
+
 .container-form{
   width: 968px;
   height: 221px;
@@ -227,6 +220,22 @@ font-family: 'Ubuntu', sans-serif;
   border-radius: 10px;
 }
 
+.product-card {
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+ 
 
 footer {
       background: #f9f9f9;

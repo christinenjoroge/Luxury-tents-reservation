@@ -21,7 +21,7 @@ include "includes/header.php";
             <!-- Product Price -->
             <h6 class="text-success">18,000-25,000pernight</h6>
             <!-- Add to Cart Button -->
-            <button class="btn btn-danger btn-block">Reserve Now</button>
+             <a href="reservation.php" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">Reserve Now</a>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ include "includes/header.php";
             <!-- Product Price -->
             <h6 class="text-success">Ksh 11,000-22,000pernight</h6>
             <!-- Add to Cart Button -->
-            <button class="btn btn-danger btn-block">Reserve Now</button>
+           <a href="reservation.php" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">Reserve Now</a>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@ include "includes/header.php";
             <!-- Product Price -->
             <h6 class="text-success">18,000-25,000pernight</h6>
             <!-- Add to Cart Button -->
-            <button class="btn btn-danger btn-block">Reserve Now</button>
+        <a href="reservation.php" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">Reserve Now</a>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ include "includes/header.php";
             <!-- Product Price -->
             <h6 class="text-success">Ksh 11,000-22,000pernight</h6>
             <!-- Add to Cart Button -->
-            <button class="btn btn-danger btn-block">Reserve Now</button>
+          <a href="reservation.php" class="btn btn-sm btn-danger mt-2 w-auto align-self-start">Reserve Now</a>
           </div>
         </div>
       </div>
