@@ -16,7 +16,7 @@ include "includes/header.php";
           <!-- search form -->
   <div class="container-form my-4 d-none d-md-block">
      <div class="d-flex justify-content-center gap-3 mb-3">
-    <a class="btn btn-outline-danger d-flex aling-items-center gap-2" href="reservation.html">
+    <a class="btn btn-outline-danger d-flex aling-items-center gap-2" href="luxurytents.php">
        <img src="images/icon2.png" alt="Trip icon" width="18" height="18">
 
  <span class="btn-text text-black" style="font-family: 'Ubuntu', sans-serif; font-weight: 700; line-height: 100%; font-size: 13px;">
@@ -24,14 +24,14 @@ include "includes/header.php";
 </span>
     </a>
 
-     <a class="btn btn-outline-secondary d-flex align-items-center gap-2" href="reservation.html">
+     <a class="btn btn-outline-secondary d-flex align-items-center gap-2" href="#safariBtn">
        <span class="btn-text text-secondary" style="font-family: 'Ubuntu', sans-serif; font-weight: 700; line-height: 100%; font-size: 13px;">
   <img src="images/Binoculars.png" alt="Trip icon" width="18" height="18">
    Join a Safari
 </span>
 </a>
 
-       <a class="btn btn-outline-secondary d-flex align-items-center gap-2" href="reservation.html">
+       <a class="btn btn-outline-secondary d-flex align-items-center gap-2" href="#campBtn">
         <span class="btn-text text-secondary" style="font-family: 'Poppins', sans-serif; font-weight: 600; line-height: 100%; font-size: 13px;">
           <img src="images/people.png" alt="Trip icon" width="18" height="18">
        Restourant
@@ -360,6 +360,25 @@ include "includes/header.php";
 </section>
 
 <!-- end of reviews -->
+
+
+<!-- Confirmation Modal -->
+<div id="confirmationModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <div class="modal-body text-center">
+      <div class="icon">
+        ✔️
+      </div>
+      <h3>Booking Confirmed!</h3>
+      <p>
+        Your details have been successfully saved, and your guest account has been created. 
+        Account information and next steps have been sent to your email.
+      </p>
+      <button id="dashboardBtn" class="btn btn-danger">Continue to Dashboard</button>
+    </div>
+  </div>
+</div>
 
 
 <?php
