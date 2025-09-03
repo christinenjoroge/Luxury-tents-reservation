@@ -80,7 +80,7 @@
   <a class="btn btn-outline-danger custom-nav-btn" href="sign in.php">
     <i class="bi bi-person-circle text-secondary me-2"></i> Login
   </a>
-  <a class="btn btn-danger custom-nav-btn d-flex align-items-center gap-2" href="reservation.html">
+  <a class="btn btn-danger custom-nav-btn d-flex align-items-center gap-2" href="reservation.php">
      <img src="images/vector.png" alt="Trip icon" width="18" height="18">
     Plan your trip
   </a>
