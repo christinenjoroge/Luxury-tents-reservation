@@ -1,6 +1,4 @@
-<?php
-include "includes/header.php";
-?>
+<?php get_header(); ?>
 
   <!-- main content -->
     <section class="tents-container">
@@ -392,7 +390,4 @@ include "includes/header.php";
   </div>
 </div>
 
-
-<?php
-include "includes/footer.php";
-?>
+<?php get_footer(); ?>
