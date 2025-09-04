@@ -133,7 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const reservationForm = document.getElementById("reservationForm");
   const modal = document.getElementById("confirmationModal");
   const closeModal = document.getElementById("closeModal");
-  const dashboardBtn = document.getElementById("dashboardBtn");
 
   if (reservationForm && modal) {
     reservationForm.addEventListener("submit", function (e) {

@@ -388,7 +388,6 @@ include "includes/header.php";
       <p>
         Your details have been successfully saved.
       </p>
-      <button id="dashboardBtn" class="btn btn-danger">Continue to Dashboard</button>
     </div>
   </div>
 </div>
