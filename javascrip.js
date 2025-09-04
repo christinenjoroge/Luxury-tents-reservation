@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // --- Section Toggle ---
   const campBtn = document.getElementById("campBtn");
   const safariBtn = document.getElementById("safariBtn");
   const campSection = document.getElementById("camp-section");
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // --- Add Additional Guest ---
   const addGuestBtn = document.getElementById("addGuest");
   if (addGuestBtn) {
     addGuestBtn.addEventListener("click", () => {
@@ -41,10 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
       guestContainer.appendChild(newGuest);
     });
   }
-});
 
-
-document.addEventListener("DOMContentLoaded", function () {
+  // --- Tent Selection from Button ---
   const reserveButtons = document.querySelectorAll(".reserve-btn");
   const tentTypeInput = document.getElementById("tent-type-input");
   const tentImageDisplay = document.getElementById("tent-image-display");
@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
   reserveButtons.forEach(button => {
     button.addEventListener("click", (e) => {
       e.preventDefault();
-
       const selectedTent = button.getAttribute("data-tent");
       const tentImage = button.getAttribute("data-tent-img");
 
@@ -61,90 +60,101 @@ document.addEventListener("DOMContentLoaded", function () {
         tentTypeInput.value = selectedTent;
         tentImageDisplay.src = tentImage;
         tentNameDisplay.textContent = selectedTent;
-
         document.getElementById("reservation-form").scrollIntoView({ behavior: "smooth" });
       }
     });
   });
 
-
-  
-  const tentPrices = {
-    honeymoon: { min: 18000, max: 25000 },
-    bush: { min: 11000, max: 22000 },
-    glamping: { min: 18000, max: 25000 },
-    family: { min: 11000, max: 22000 }
-  };
-
+  // --- Price Calculator ---
   const form = document.getElementById('priceCalcForm');
   const result = document.getElementById('result');
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
 
-    const tentType = document.getElementById('tentType').value;
-    const checkin = new Date(document.getElementById('checkin').value);
-    const checkout = new Date(document.getElementById('checkout').value);
-    const tents = parseInt(document.getElementById('tents').value);
-    const guests = parseInt(document.getElementById('guests').value);
+      const tentPrices = {
+        honeymoon: { min: 18000, max: 25000 },
+        bush: { min: 11000, max: 22000 },
+        glamping: { min: 18000, max: 25000 },
+        family: { min: 11000, max: 22000 }
+      };
 
-    // Validate input
-    if (!tentType || isNaN(checkin) || isNaN(checkout) || tents <= 0 || guests <= 0 || checkin >= checkout) {
-      result.textContent = 'Please fill out all fields correctly.';
-      result.classList.remove('text-success');
-      result.classList.add('text-danger');
-      return;
-    }
+      const tentType = document.getElementById('tentType').value;
+      const checkin = new Date(document.getElementById('checkin').value);
+      const checkout = new Date(document.getElementById('checkout').value);
+      const tents = parseInt(document.getElementById('tents').value);
+      const guests = parseInt(document.getElementById('guests').value);
 
-    // Calculate number of nights
-    const timeDiff = checkout - checkin;
-    const nights = timeDiff / (1000 * 60 * 60 * 24); // Convert ms to days
+      if (!tentType || isNaN(checkin) || isNaN(checkout) || tents <= 0 || guests <= 0 || checkin >= checkout) {
+        result.textContent = 'Please fill out all fields correctly.';
+        result.classList.remove('text-success');
+        result.classList.add('text-danger');
+        return;
+      }
 
-    const price = tentPrices[tentType];
-    const totalMin = price.min * nights * tents;
-    const totalMax = price.max * nights * tents;
+      const timeDiff = checkout - checkin;
+      const nights = timeDiff / (1000 * 60 * 60 * 24);
 
-    result.innerHTML = `KES ${totalMin.toLocaleString()} – ${totalMax.toLocaleString()} 
-      for ${nights} night(s), ${guests} guest(s), and ${tents} tent(s).`;
-    result.classList.remove('text-danger');
-    result.classList.add('text-success');
-  });
+      const price = tentPrices[tentType];
+      const totalMin = price.min * nights * tents;
+      const totalMax = price.max * nights * tents;
 
-
- 
-
-  document.getElementById('availabilityForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent form from submitting
-
-    // Get form data
-    const tentType = document.getElementById('tent_type').value;
-    const checkin = document.getElementById('checkin').value;
-    const checkout = document.getElementById('checkout').value;
-    const guests = document.getElementById('guests').value;
-
-    // Display data on page
-    const resultsDiv = document.getElementById('formResults');
-    resultsDiv.innerHTML = `
-      <h4>Search Details</h4>
-      <p><strong>Tent Type:</strong> ${tentType}</p>
-      <p><strong>Check-in:</strong> ${checkin}</p>
-      <p><strong>Check-out:</strong> ${checkout}</p>
-      <p><strong>Guests:</strong> ${guests}</p>
-    `;
-
-    // Optional: Also log to console for debugging
-    console.log({
-      tentType,
-      checkin,
-      checkout,
-      guests
+      result.innerHTML = `KES ${totalMin.toLocaleString()} – ${totalMax.toLocaleString()} 
+        for ${nights} night(s), ${guests} guest(s), and ${tents} tent(s).`;
+      result.classList.remove('text-danger');
+      result.classList.add('text-success');
     });
-  });
+  }
 
+  // --- Check Availability Form ---
+  const availabilityForm = document.getElementById('availabilityForm');
+  if (availabilityForm) {
+    availabilityForm.addEventListener('submit', function (e) {
+      e.preventDefault();
 
+      const tentType = document.getElementById('tent_type').value;
+      const checkin = document.getElementById('checkin').value;
+      const checkout = document.getElementById('checkout').value;
+      const guests = document.getElementById('guests').value;
 
+      const resultsDiv = document.getElementById('formResults');
+      resultsDiv.innerHTML = `
+        <h4>Search Details</h4>
+        <p><strong>Tent Type:</strong> ${tentType}</p>
+        <p><strong>Check-in:</strong> ${checkin}</p>
+        <p><strong>Check-out:</strong> ${checkout}</p>
+        <p><strong>Guests:</strong> ${guests}</p>
+      `;
+    });
+  }
 
+  // --- Reservation Form Modal ---
+  const reservationForm = document.getElementById("reservationForm");
+  const modal = document.getElementById("confirmationModal");
+  const closeModal = document.getElementById("closeModal");
+  const dashboardBtn = document.getElementById("dashboardBtn");
 
+  if (reservationForm && modal) {
+    reservationForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent form redirect
+
+      // ✅ Show modal
+      modal.style.display = "block";
+    });
+
+    closeModal?.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+
+    dashboardBtn?.addEventListener("click", () => {
+      window.location.href = "reservation.php"; // Change as needed
+    });
+  }
 });
-
-

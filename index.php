@@ -271,18 +271,9 @@ include "includes/header.php";
 <!-- end -->
 
 <!-- plan a trip start -->
-<section class="about-tents-section  ">
-  <div class="container  py-5">
-    <div class="row">
-      <div class="col-12 col-md-6 mx-auto d-flex mb-5 justify-content-center"> 
-        <a class="btn btn-danger custom-nav-btn d-flex align-items-center gap-2" href="reservation.html">
-          <img src="images/vector.png" alt="Trip icon" width="18" height="18">
-          Plan your trip
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+
+
+
 
 
 <!-- plan a trip end -->
@@ -361,6 +352,29 @@ include "includes/header.php";
 
 <!-- end of reviews -->
 
+<section class="about-tents-section text-white  d-flex align-items-center fw-normal fs-6 lh-base font-ubuntu">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md-6">
+ <h2 class=" mb-4 heading-underline">Plan <span>Your trip</span></h2>
+        <p class="aboutus">
+         Get ready for an unforgettable adventure! Whether you're visiting for relaxation, exploration,
+          or excitement, planning your trip in advance ensures a smooth and enjoyable experience. Start by 
+          choosing your dates, booking your accommodations, and checking out nearby attractions. Don't forget 
+          to explore dining options, outdoor activities, and local events happening during your stay.
+           With a little preparation, 
+         your trip will be stress-free and full of memorable moments. Let the journey begin!
+
+          <a class="btn btn-danger custom-nav-btn d-flex align-items-center gap-2" href="reservation.php">
+     <img src="images/vector.png" alt="Trip icon" width="18" height="18">
+    Plan your trip
+  </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Confirmation Modal -->
 <div id="confirmationModal" class="modal">
@@ -372,8 +386,7 @@ include "includes/header.php";
       </div>
       <h3>Booking Confirmed!</h3>
       <p>
-        Your details have been successfully saved, and your guest account has been created. 
-        Account information and next steps have been sent to your email.
+        Your details have been successfully saved.
       </p>
       <button id="dashboardBtn" class="btn btn-danger">Continue to Dashboard</button>
     </div>

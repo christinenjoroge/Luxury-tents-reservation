@@ -15,7 +15,7 @@ include "includes/header.php";
           <div class="row g-3">
             <div class="col-md-6">
 
-             <form action="confirmation.php" method="POST">
+             <form action="confirmation.php" method="POST" id="reservationForm">
               <label for="firstname" class="form-label">First Name</label>
               <input type="text" class="form-control" name="firstname" id="firstName" placeholder="First name">
             </div>
@@ -44,11 +44,7 @@ include "includes/header.php";
             <label for="checkin" class="form-label">Check-in</label>
             <input type="date"  name="checkin" class="form-control" required>
           </div>
-          <div class="col-md-6">
-            <label for="checkout" class="form-label">Check-out</label>
-            <input type="date"  name="checkout" class="form-control" required>
-          </div>
-
+          
 
 
            <div class="col-12">
