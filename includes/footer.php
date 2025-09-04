@@ -1,13 +1,13 @@
 <footer>
   <!-- Left: Logo & Social -->
   <div class="footer-logo">
-    <img src="logo.png" alt="Bunduz Logo">
+    <img src="images/logo.png" alt="Bunduz Logo">
     <div class="social-icons">
-      <a href="#"><i class="fab fa-x-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-tiktok"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi  bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+      <a href="#"><i class="bi bi-tiktok"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
     </div>
   </div>
 
