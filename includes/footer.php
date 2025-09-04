@@ -1,7 +1,7 @@
 <footer>
   <!-- Left: Logo & Social -->
   <div class="footer-logo">
-    <img src="your-logo.png" alt="Bunduz Logo">
+    <img src="logo.png" alt="Bunduz Logo">
     <div class="social-icons">
       <a href="#"><i class="fab fa-x-twitter"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
