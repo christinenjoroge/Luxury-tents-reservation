@@ -101,7 +101,7 @@ include "includes/header.php";
     <div id="camp-section" class="row g-4">
       <!-- Card 1 -->
       <div class="col-md-4 col-sm-6">
-        <div class="card card-overlay text-white">
+        <div class="card card-overlay text-white"id="pap's cabin house">
           <img src="images/cabin.jpg" class="card-img" alt="Luxury Tent">
           <div class="card-img-overlay d-flex align-items-end p-3">
             <h5 class="card-title">Pap's Cabin House</h5>
@@ -119,7 +119,7 @@ include "includes/header.php";
       </div>
 
       <div class="col-md-4 col-sm-6">
-        <div class="card card-overlay text-white">
+        <div class="card card-overlay text-white" id="Grounds">
           <img src="images/grounds1.png" class="card-img" alt="Grounds">
           <div class="card-img-overlay d-flex align-items-end p-3">
             <h5 class="card-title">Grounds</h5>
@@ -128,7 +128,7 @@ include "includes/header.php";
       </div>
 
       <div class="col-md-4 col-sm-6">
-        <div class="card card-overlay text-white">
+        <div class="card card-overlay text-white"id="Glamping">
           <img src="images/glamping.jpg" class="card-img" alt="Glamping">
           <div class="card-img-overlay d-flex align-items-end p-3">
             <h5 class="card-title">Glamping</h5>
@@ -137,7 +137,7 @@ include "includes/header.php";
       </div>
 
       <div class="col-md-4 col-sm-6">
-        <div class="card card-overlay text-white">
+        <div class="card card-overlay text-white"id="restaurant">
           <img src="images/restaurant-banner.png" class="card-img" alt="Restaurant">
           <div class="card-img-overlay d-flex align-items-end p-3">
             <h5 class="card-title">Restaurant</h5>
@@ -146,7 +146,7 @@ include "includes/header.php";
       </div>
 
       <div class="col-md-4 col-sm-6">
-        <div class="card card-overlay text-white">
+        <div class="card card-overlay text-white" id="activities">
           <img src="images/activity3.png" class="card-img" alt="Activities">
           <div class="card-img-overlay d-flex align-items-end p-3">
             <h5 class="card-title">Activities</h5>
@@ -228,7 +228,7 @@ include "includes/header.php";
     <div class="row g-4 ">
       <!-- Card 1 -->
       <div class="col-md-4">
-        <div class="card experiences shadow-sm h-100 text-white">
+        <div class="card experiences shadow-sm h-100 text-white"id="experiences">
         <img src="images/luxury-tent12.png" class="card-img-top  h-200" alt="Luxury Tented Retreat">
           <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
             <h5 class="card-title">Luxury Tented Retreat</h5>

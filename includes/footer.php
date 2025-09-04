@@ -17,23 +17,18 @@
       <div>
         <h4>Safari</h4>
         <ul>
-          <li><a href="#">Overland Trucks</a></li>
-          <li><a href="#">Wild Camping</a></li>
-          <li><a href="#">Field School</a></li>
-          <li><a href="#">Corporate Safaris</a></li>
-          <li><a href="#">Kenya To South Africa</a></li>
+          <li><a href="#experiences">Wild Camping</a></li>
         </ul>
       </div>
       <div>
         <h4>Camps</h4>
         <ul>
-          <li><a href="#">Pap’s Cabin House</a></li>
-          <li><a href="#">Luxury Tents</a></li>
-          <li><a href="#">Grounds</a></li>
-          <li><a href="#">Glamping</a></li>
-          <li><a href="#">Kenya To South Africa</a></li>
-          <li><a href="#">Restaurant</a></li>
-          <li><a href="#">Activities</a></li>
+          <li><a href="#pap's cabin house">Pap’s Cabin House</a></li>
+          <li><a href="luxurytents.php">Luxury Tents</a></li>
+          <li><a href="#Grounds">Grounds</a></li>
+          <li><a href="#Glamping">Glamping</a></li>
+          <li><a href="#restaurant">Restaurant</a></li>
+          <li><a href="#activities">Activities</a></li>
         </ul>
       </div>
     </div>
