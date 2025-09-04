@@ -25,13 +25,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt = $conn->prepare($sql);
 
     $stmt->bind_param(
-        "ssssssssiii",
+        "ssssssssssi",
         $firstName, $lastName, $idNumber, $dob, $email, $phone,
         $tentType, $checkin, $checkout, $tents, $guests
     );
-
-    // Debugging: check values before execution
-    var_dump($firstName, $lastName, $idNumber);
 
     if ($stmt->execute()) {
         echo "<h3>Reservation successfully submitted!</h3>";
