@@ -39,10 +39,10 @@ include "includes/header.php";
       </a>
   </div>
 
-<form class="search-form">
+<form class="search-form"  id="availabilityForm"  action="checkavailability.php" method="POST">
         <div class="form-group">
           <label>Camps</label>
-          <select style="border: none;">
+          <select  name="tent_type" id="tent_type" class="form-control" required style="border: none;">
             <option>Luxury Tents</option>
             <option>Honeymoontent</option>
              <option>Family Tents</option>
@@ -54,17 +54,17 @@ include "includes/header.php";
 
         <div class="form-group" style="border: none";>
           <label>Check in</label>
-          <input type="date" style="border: none; outline: none;">
+          <input type="date" name="checkin" required style="border: none; outline: none;">
         </div>
 
         <div class="form-group">
           <label>Check out</label>
-          <input type="date"style="border: none; outline: none;">
+          <input type="date" name="checkout" required style="border: none; outline: none;">
         </div>
 
         <div class="form-group">
           <label>Guests</label>
-          <select style="border: none";>
+          <select name="guests" class="form-control" required  style="border: none";>
             <option>Guests</option>
             <option>1 Guest</option>
             <option>2 Guests</option>

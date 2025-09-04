@@ -111,6 +111,39 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+ 
+
+  document.getElementById('availabilityForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form from submitting
+
+    // Get form data
+    const tentType = document.getElementById('tent_type').value;
+    const checkin = document.getElementById('checkin').value;
+    const checkout = document.getElementById('checkout').value;
+    const guests = document.getElementById('guests').value;
+
+    // Display data on page
+    const resultsDiv = document.getElementById('formResults');
+    resultsDiv.innerHTML = `
+      <h4>Search Details</h4>
+      <p><strong>Tent Type:</strong> ${tentType}</p>
+      <p><strong>Check-in:</strong> ${checkin}</p>
+      <p><strong>Check-out:</strong> ${checkout}</p>
+      <p><strong>Guests:</strong> ${guests}</p>
+    `;
+
+    // Optional: Also log to console for debugging
+    console.log({
+      tentType,
+      checkin,
+      checkout,
+      guests
+    });
+  });
+
+
+
+
 
 });
 
