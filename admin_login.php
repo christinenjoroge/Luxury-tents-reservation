@@ -40,6 +40,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo " Admin not found.";
     }
 
+
+    // echo password_hash("admin123", PASSWORD_DEFAULT);
+
     // Clean up
     $stmt->close();
     $conn->close();
