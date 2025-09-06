@@ -17,7 +17,12 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
     if ($stmt->execute()) {
         // header("Location: Tentmanagement.php?msg=success");
         // exit();
-       echo "save sucessfuly";
+      echo "<script>
+    alert('Data saved successfully!');
+    window.location.href = 'Tentmanagement.php';
+</script>";
+
+
     } else {
         echo "Error: " . $stmt->error;
     }
