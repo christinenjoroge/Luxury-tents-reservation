@@ -44,6 +44,11 @@ include "includes/header.php";
             <label for="checkin" class="form-label">Check-in</label>
             <input type="date"  name="checkin" class="form-control" required>
           </div>
+
+          <div class="col-md-6">
+            <label for="checkin" class="form-label">Check-out</label>
+            <input type="date"  name="checkout" class="form-control" required>
+          </div>
           
 
 
