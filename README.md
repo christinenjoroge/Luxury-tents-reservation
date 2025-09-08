@@ -31,6 +31,15 @@ Version Control: Git & GitHub
 
 Design Reference: Figma
 
+## Database Setup
+1. Import `camp_booking.sql` using phpMyAdmin or MySQL CLI.
+2. Update `dbconnection.php` with your DB credentials:
+   - Host: localhost
+   - User: root
+   - Password: (leave blank for XAMPP default)
+   - Database: luxury_tents
+
+
 luxury-tents-reservation/
 │── index.html          # Homepage  
 │── reservation.html    # Reservation form & guest info  
