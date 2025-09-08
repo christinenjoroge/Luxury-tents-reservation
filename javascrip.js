@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     reservationForm.addEventListener("submit", function (e) {
       e.preventDefault(); // Prevent form redirect
 
-      // ✅ Show modal
+      //Show modal
       modal.style.display = "block";
     });
 
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     dashboardBtn?.addEventListener("click", () => {
-      window.location.href = "reservation.php"; // Change as needed
+      window.location.href = "reservation.php"; 
     });
   }
 });

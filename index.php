@@ -43,11 +43,11 @@ include "includes/header.php";
         <div class="form-group">
           <label>Camps</label>
           <select  name="tent_type" id="tent_type" class="form-control" required style="border: none;">
-            <option>Luxury Tents</option>
-            <option>Honeymoontent</option>
-             <option>Family Tents</option>
-              <option>Bush Tent</option>
-               <option>Glamping</option>
+              <option value="" disabled selected>Luxury Tents</option>
+              <option value="Honeymoontent">Honeymoontent</option>
+              <option value="Family Tents">Family Tents</option>
+              <option value="Bush Tent">Bush Tent</option>
+              <option value="Glamping">Glamping</option>
 
           </select>
         </div>
@@ -65,9 +65,13 @@ include "includes/header.php";
         <div class="form-group">
           <label>Guests</label>
           <select name="guests" class="form-control" required  style="border: none";>
-            <option>Guests</option>
-            <option>1 Guest</option>
-            <option>2 Guests</option>
+             <option value="" disabled selected>Select Guests</option>
+           <option value="1"> 1 Guest</option>
+            <option value="2"> 2 Guests</option>
+             <option value="3">3 Guests</option>
+             <option value="4">4 Guests</option>
+             <option value="5">5 Guests</option>
+             <option value="6">6 Guests</option>
           </select>
         </div>
        <button type="submit" class="search-btn">Search</button>
