@@ -31,8 +31,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     );
 
     if ($stmt->execute()) {
-        echo "<h3>Reservation successfully submitted!</h3>";
-    } else {
+          echo "<script>
+    alert('Reservation successfully submitted!');
+    window.location.href = 'reservation.php';
+</script>";
+
+    } 
+    else {
         echo "Error: " . $stmt->error;
     }
 
